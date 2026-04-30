@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML MCQ</title>
+    <link rel="stylesheet" href="c.css">
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        if (localStorage.getItem("login") !== "true") {
+            localStorage.setItem("redirectPage", window.location.href);
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body onload="loadQuestions()">
+
+
+    <h2 class="hed">HTML MCQ Question and Answers</h2>
+    <hr>
+    <div id="quiz"></div>
+
+    <p id="result"></p>
+    <script src="html.js"></script>
+
+
+</body>
+
+</html>

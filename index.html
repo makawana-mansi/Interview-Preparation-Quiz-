@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+	<link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="nav">
+			<ul>
+				<li class="dropdown">
+					<div class="menu">
+						<i><a href="#" class="fa-solid fa-bars"></a></i>
+					</div>
+					<ul class="dropdown-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Quiz</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<a href="#" class="a">Home</a>
+		<nav class="nav">
+			<ul>
+
+				<li class="dropdown">
+					<a href="#">Quiz<span class="arrow">▼</span></a>
+					<ul class="dropdown-menu">
+						<li><a href="c.html">C</a></li>
+						<li><a href="cpp.html">C++</a></li>
+						<li><a href="dfs.html">Data structures(DFS)</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="css.html">CSS</a></li>
+						<li><a href="js.html">JavaScript</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<a href="help.html" class="a">Help</a>
+		<a href="about.html" class="a">About</a>
+		<a href="login.html">
+			<div class="logo-section">
+				<i class="fa-notdog fa-solid fa-user"></i>login
+		</a></div>
+	</header>
+
+
+	<section>
+		<div class="wel">
+			<h1>Welcome to mcq.com</h1>
+			<p>
+				Practice multiple choice questions on Computer subjects such as C, C++, Data Structures (DFS), HTML,
+				CSS, and JavaScript.
+				Improve your programming knowledge and strengthen your technical skills with our quiz platform.
+			</p>
+
+			<div class="se">
+				<h2>Search Any Question (MCQ) Here</h2>
+				<div class="Search-bar">
+					<input type="text" id="searchInput" placeholder="Search MCQ...">
+					<button type="Submit" onclick="searchMCQ()">Search</button>
+				</div>
+				<script>
+					function searchMCQ() {
+						let searchElement = document.getElementById("searchInput");
+						let input = searchElement.value.toLowerCase().trim();
+						if (input === "c++" || input === "cpp") {
+							window.location.href = "cpp.html";
+						}
+						else if (input === "c") {
+							window.location.href = "c.html";
+						}
+						else if (input === "html") {
+							window.location.href = "html.html";
+						}
+						else if (input === "css") {
+							window.location.href = "css.html";
+						}
+						else if (input === "dfs") {
+							window.location.href = "dfs.html";
+						}
+						else {
+							alert("No MCQ found ❌");
+						}
+						searchElement.value = "";
+					}
+				</script>
+
+			</div>
+	</section>
+
+	<section style="background:rgba(0,0,0,0.1);">
+		<h2 class="title">Programming MCQ Question For Practice</h2>
+		<hr class="line">
+
+		<div class="cards">
+
+			<a href="c.html" class="card" style="background: #D24625;">C PROGRAM</a>
+			<a href="cpp.html" class="card" style=" background:#D830B9;">C++ PROGRAM</a>
+
+			<a href="dfs.html" class="card" style="background:#42D68C;">DATA STRUCTURE (DFS)</a>
+			<a href="html.html" class="card" style="background:#96CC52;">HTML</a>
+
+			<a href="css.html" class="card" style="background:#EA8044;margin-bottom: 22%; ">CSS</a>
+			<a href="js.html" class="card" style="background:#006C05; margin-bottom: 22%;">JAVASCRIPT</a>
+		</div>
+
+	</section>
+
+	<footer class="footer">
+
+		<div class="left">Copyright © 2026
+			<a class="foo" href="##">MCQ.com</a>
+		</div>
+
+		<div class="right">
+			<a href="#">About Us </a>
+			<a href="#">| Terms & Condition |</a>
+			<a href="#">Privacy Policy |</a>
+			<a href="#">Contact Us </a>
+			<a class="fa-brands fa-square-instagram" style="color: rgb(0,0,0);"></a>
+			<a class="fa-brands fa-facebook" style="color: rgb(0,0,0);"></a>
+			<a class="fa-brands fa-square-twitter" style="color: rgb(0,0,0);"></a>
+
+
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

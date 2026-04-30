@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz Categories</title>
+</head>
+<style>
+  body {
+    background: #f1f1f1;
+  }
+
+  .quiz-container {
+    background: white;
+    margin: 200px auto;
+    width: 500px;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0);
+    padding-bottom: 3%;
+
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding: 5% 0 2px;
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: #1aa892;
+    color: white;
+    border-radius: 7%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  button:hover {
+    background: #148572;
+    ;
+    border: 2px solid white;
+  }
+</style>
+
+<body>
+  <div class="quiz-container">
+    <h2>Select Quiz</h2>
+
+
+    <div class="button-group">
+      <button onclick="goQuiz('c.html')">C</button>
+      <button onclick="goQuiz('cpp.html')">C++</button>
+      <button onclick="goQuiz('dfs.html')">DFS</button>
+      <button onclick="goQuiz('html.html')">HTML</button>
+      <button onclick="goQuiz('css.html')">CSS</button>
+      <button onclick="goQuiz('js.html')">JAVASCRIPT</button>
+    </div>
+  </div>
+  <script>
+    function goQuiz(page) {
+
+
+      localStorage.setItem("redirectPage", page);
+      window.location.href = "login.html"
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.hed {
+	text-align: center;
+	color: #2ec4b6;
+}
+
+.mcq-box {
+	width: 20%;
+	margin: 40px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.options label {
+	display: block;
+	padding: 12px;
+	/*margin: 10px 0;*/
+	background: #f1f1f1;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.options label:hover {
+	background: #2ec4b6;
+	color: white;
+}
+
+button {
+	margin-top: 15px;
+	padding: 10px 20px;
+	border: none;
+	background: #2ec4b6;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.q-title {
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 22px;
+}
+
+.btn-group {
+	display: flex;
+	gap: 8px;
+}
+
+b {
+	color: #2ec4b6;
+	font-size: 20px;
+}
