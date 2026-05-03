@@ -4,11 +4,11 @@
 }
 
 .mcq-box {
-	width: 20vw;
+	width: 20%;
 	margin: 3% auto;
 	padding: 2%;
 	background: white;
-	border-radius: 2vh;
+	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -16,8 +16,9 @@
 	display: block;
 	padding: 5%;
 	background: #f1f1f1;
-	border-radius: 1vh;
+	border-radius: 10px;
 	cursor: pointer;
+	font-size: 20px;
 }
 
 .options label:hover {
@@ -27,18 +28,20 @@
 
 button {
 	margin-top: 6%;
-	padding: 2vh 3vh;
+	padding: 5%;
 	border: none;
 	background: #2ec4b6;
 	color: white;
-	border-radius: 1vh;
+	border-radius: 10px;
 	cursor: pointer;
+	font-size: 15px;
 }
 
 .q-title {
-	font-size: 2vw;
+	font-size: 30px;
 	padding-top: 5%;
 	padding-bottom: 8%;
+
 }
 
 .btn-group {
@@ -48,5 +51,33 @@ button {
 
 b {
 	color: #2ec4b6;
-	font-size: 1.5vw;
+	font-size: 19px;
+}
+
+@media (max-width:600px) {
+	.mcq-box {
+		width: 100vmax;
+		padding: 15px;
+		border-radius: 2vmax;
+	}
+
+	.options label {
+		display: block;
+		padding: 5%;
+		font-size: 100vmax;
+	}
+
+	button {
+		width: 5vh;
+		border-radius: 1vh;
+		font-size: 20vmax;
+	}
+
+	.q-title {
+		font-size: 30vmax;
+		padding-top: 7vmax;
+		padding-bottom: 7vmax;
+
+	}
+
 }
