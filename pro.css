@@ -22,11 +22,11 @@ header a {
 }
 
 .logo-section {
-	display: none;
+	display: block;
 	flex-direction: column;
 	color: white;
 	border: 1vh solid transparent;
-	margin-right: 30%;
+	margin-right: 1vmax;
 }
 
 .logo-section:hover {
@@ -92,10 +92,6 @@ header a {
 
 }
 
-/*.menu:hover{
-	 background-color: white;
-	border-radius: 1vh;
-}*/
 
 .help {
 	padding: 0.3vh 1.2vh;
@@ -212,9 +208,6 @@ h2 {
 	padding-top: 2%;
 	padding-left: 24vw;
 	padding-bottom: 5%;
-	/*border-radius: 100px*/
-	/*margin: 5px 5px 60px 5px;*/
-
 }
 
 .Search-bar button {
@@ -251,7 +244,6 @@ h2 {
 	border: 1% solid #ccc;
 }
 
-/*GRID TABLE JEVU LYOUT*/
 .cards {
 	margin-top: 3%;
 	display: grid;
@@ -261,8 +253,6 @@ h2 {
 	margin-left: 33%;
 
 }
-
-/*CARD*/
 
 .card {
 
@@ -280,16 +270,11 @@ h2 {
 	border: 0.1vh solid transparent;
 }
 
-/*hover*/
-
-
 .card:hover {
 
 	background-color: #2ec4b6;
 	color: white;
 	border: 0.1vh solid #22c1a7;
-	/*transform: translateY(-5px);*/
-
 }
 
 footer {
@@ -312,12 +297,9 @@ footer {
 	margin-left: 1vmax;
 }
 
-
-/* ****************************************************************** */
 @media (max-width:600px) {
 	.header {
 		background: #2F3239;
-		/*display: flex;*/
 		font-size: 5vw;
 		display: inline-block;
 		position: relative;
@@ -325,21 +307,24 @@ footer {
 		width: 100vmax;
 		justify-content: space-evenly;
 		align-items: center;
-
 	}
 
 	.logo-section {
-		display: flex;
+		display: none;
+		flex-direction: column;
 		color: white;
-		background-color: #2F3239;
-		margin-bottom: 3vh;
-		border-radius: 4%;
-		font-size: 2vh;
+		border: 1vh solid transparent;
+		margin-right: 1vmax;
 	}
 
-	.logo-section:hover {
-		background-color: #22c1a7;
-		border-radius: 1vmax;
+	.login {
+		display: flex;
+		color: #000;
+		background-color: #70b0a5;
+		font-size: 5.5vw;
+		margin-bottom: 5%;
+		padding: 3% 3%;
+		border-radius: 4%;
 	}
 
 	.menu {
@@ -392,7 +377,8 @@ footer {
 
 	.menu:hover .menu-item {
 		display: block;
-		border-radius: 1vh background-color: #22c1a7;
+		border-radius: 1vh;
+		background-color: #22c1a7;
 	}
 
 	.home {
@@ -400,23 +386,38 @@ footer {
 		display: none;
 		background-color: #70b0a5;
 		border-radius: 4%;
-		font-size: 3vh;
+		font-size: 5.5vw;
 
 	}
 
 	.quiz {
 		background-color: #70b0a5;
 		border-radius: 4%;
-		font-size: 3vh;
+		font-size: 5.5vw;
 		margin-top: 2vh;
 	}
+
+	.c,
+	.cpp,
+	.dfs,
+	.html,
+	.css,
+	.js {
+		font-size: 4.5vw;
+	}
+
+
 
 	.help,
 	.about {
 		background-color: #70b0a5;
 		border-radius: 4%;
-		font-size: 3vh;
+		font-size: 5.5vw;
 		margin-top: 2vh;
+		padding: 0.3vh 1.2vh;
+		border: 1vh solid transparent;
+		display: none;
+		margin-right: 10%;
 	}
 
 	.dropdown {
@@ -428,18 +429,6 @@ footer {
 		padding: 1vh 2vh;
 	}
 
-	.help {
-		padding: 0.3vh 1.2vh;
-		border: 1vh solid transparent;
-		display: none;
-	}
-
-	.about {
-		padding: 0.3vh 1.2vh;
-		border: 1vh solid transparent;
-		display: none;
-		margin-right: 10%;
-	}
 
 	h1 {
 		color: white;
@@ -526,7 +515,6 @@ footer {
 		line-height: 100vmax;
 	}
 
-	/*GRID TABLE JEVU LYOUT*/
 	.cards {
 		margin-top: 3%;
 		width: 50vmax;
@@ -534,7 +522,6 @@ footer {
 		height: 50vmax;
 	}
 
-	/*CARD*/
 	.card {
 
 		display: block;
@@ -579,3 +566,4 @@ footer {
 		text-decoration: none;
 		margin-left: 3vh;
 	}
+}

@@ -157,7 +157,6 @@ const questions = [
   }
 
 ];
-//load question
 
 function loadQuestions() {
   let quiz = document.getElementById("quiz");

@@ -13,26 +13,40 @@
     }
 
     .help-container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+      max-width: 45vw;
+      margin: 4vmax auto;
+      height: 50vmax;
+      padding: 2vmax;
       background: #ffffff;
-      border-radius: 15px;
+      border-radius: 2.5vmin;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .help-container h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 4vmin;
     }
 
     .help-container h2 {
-      margin-top: 20px;
+      margin-top: 3vmin;
       color: #2bb3a3;
     }
 
     .help-container p {
-      margin: 5px 0;
+      margin: 1vmin 0;
+    }
+
+    @media (max-width:600px) {
+      .help-container {
+        max-width: 45vw;
+        margin: 4vmax auto;
+        height: 150vmax;
+        padding: 2vmax;
+        background: #ffffff;
+        border-radius: 2.5vmin;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
     }
   </style>
 </head>

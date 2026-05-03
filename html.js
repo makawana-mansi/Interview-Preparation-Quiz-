@@ -115,21 +115,20 @@ function loadQuestions() {
 
       <div class="options">
     `;
-    if(q.options && q.options.length>0)
-    {
+    if (q.options && q.options.length > 0) {
 
-    for (let j = 0; j < q.options.length; j++) {
+      for (let j = 0; j < q.options.length; j++) {
 
-      let optionLabel = String.fromCharCode(65 + j);
+        let optionLabel = String.fromCharCode(65 + j);
 
-      html += `<label>
+        html += `<label>
        ${optionLabel}.
       <input type="radio" name="q${i}" value="${q.options[j]}">
       ${q.options[j]}
     </label><br>
     `;
+      }
     }
-  }
     html += `
      </div>
 
@@ -174,7 +173,6 @@ function checkAnswers() {
     "Score: " + score + " / " + questions.length;
 }
 
-// 🔥 SHOW SOLUTION FUNCTION
 
 function showSolution(index) {
   let sol = document.getElementById("sol" + index);

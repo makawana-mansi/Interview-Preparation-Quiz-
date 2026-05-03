@@ -13,11 +13,11 @@
     }
 
     .about-box {
-      max-width: 700px;
-      margin: 50px auto;
+      max-width: 50vmax;
+      margin: 3vmax auto;
       background: white;
-      padding: 30px;
-      border-radius: 10px;
+      padding: 2vmax;
+      border-radius: 1vmin;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
@@ -27,17 +27,24 @@
     }
 
     h3 {
-      margin-top: 20px;
+      margin-top: 2.5vmin;
       color: #16a085;
     }
 
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
 
     .icon {
-      font-size: 40px;
+      font-size: 2vmax;
+    }
+
+    @media (max-width:600px) {
+      .about-box {
+        max-width: 80vmax;
+        height: 80vmax;
+      }
     }
   </style>
 </head>
