@@ -297,7 +297,7 @@ footer {
 	margin-left: 1vmax;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1300px) {
 	.header {
 		background: #2F3239;
 		font-size: 5vw;
