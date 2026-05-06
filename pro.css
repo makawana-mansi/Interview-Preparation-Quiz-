@@ -297,7 +297,7 @@ footer {
 	margin-left: 1vmax;
 }
 
-@media (max-width:600px) {
+@media (max-width:1200px) {
 	.header {
 		background: #2F3239;
 		font-size: 5vw;
@@ -378,7 +378,6 @@ footer {
 	.menu:hover .menu-item {
 		display: block;
 		border-radius: 1vh;
-		background-color: #22c1a7;
 	}
 
 	.home {
@@ -405,8 +404,6 @@ footer {
 	.js {
 		font-size: 4.5vw;
 	}
-
-
 
 	.help,
 	.about {
